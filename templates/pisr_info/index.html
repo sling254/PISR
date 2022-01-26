@@ -1,1 +1,21 @@
-{%extends "base.html"%}
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block contetnt %}
+<div class="trials">
+    <video src="{% static 'videos/forest_view.mp4' %}" muted loop autoplay></video>
+    <div class="cover"></div>
+    <div class="cover-text">
+        <h2>vector graphic</h2>
+        <h4>explore the worlds</h4>
+    </div>
+</div>
+
+<div class="section one">
+
+</div>
+
+{% endblock %}
+
+
