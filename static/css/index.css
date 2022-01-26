@@ -210,5 +210,13 @@ dl, ol, ul {
   margin-bottom: 40px;
   position: relative;
 }
+
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+
 /* End of the Footer Css */
 
