@@ -190,5 +190,11 @@ dl, ol, ul {
   align-items: flex-start;
   justify-content: space-between;
 }
+
+.fcol {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
 /* End of the Footer Css */
 
