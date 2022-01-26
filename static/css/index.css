@@ -311,6 +311,26 @@ footer .underline span {
   animation: moving 2s linear infinite;
 }
 
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
 
+@media (max-width: 700px) {
+  footer {
+    bottom: unset;
+  }
+  .fcol{
+    flex-basis: 100%;
+  }
+
+  .fcol:nth-child(2), .fcol:nth-child(3) {
+    flex-basis: 100%;
+  }
+}
 /* End of the Footer Css */
 
