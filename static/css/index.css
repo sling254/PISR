@@ -170,3 +170,16 @@ dl, ol, ul {
   }
 }
 
+/* Start of the Footer Css */
+.footer footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to right, var(--primary-color), var(--adjacent-color));
+  color: #ffffff;
+  padding: 30px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+}
+/* End of the Footer Css */
+
