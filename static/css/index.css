@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 :root {
     --color-primary: #6BC74D;
     --color-secondary: #7DE06B;
     --french-blue: #70AEFF;
     --crayola-blue: #3771EF;
   }
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
 
 
   /* header and navbar styling */
@@ -175,7 +181,7 @@ dl, ol, ul {
   width: 100%;
   /*position: absolute;*/
   bottom: 0;
-  background: linear-gradient(to right, #056b9b, #457b9d);
+  background: linear-gradient(to right, #08203e, #557c93);
   color: #ffffff;
   padding: 30px 0 30px;
   font-size: 13px;
