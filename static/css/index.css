@@ -240,6 +240,11 @@ footer form {
   margin-bottom: 50px;
 }
 
+footer form .far {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
 
 /* End of the Footer Css */
 
