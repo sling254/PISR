@@ -9,3 +9,7 @@ def IndexView(request):
 
 def home(request):
     return render(request, 'pisr_info/home.html')
+
+def projects(request):
+    """View functionality for displaying projects template"""
+    return render(request, 'pisr_info/projects.html')
