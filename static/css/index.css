@@ -253,6 +253,13 @@ footer form input {
   outline: none;
 }
 
+footer form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
 footer form button .fas {
   font-size: 16px;
   color: #ccc;
@@ -278,6 +285,8 @@ footer form button .fas {
   margin: 20px auto;
 }
 
-
+.copyright {
+  text-align: center;
+}
 /* End of the Footer Css */
 
