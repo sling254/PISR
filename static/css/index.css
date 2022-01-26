@@ -199,5 +199,10 @@ dl, ol, ul {
 .fcol:nth-child(2), .fcol:nth-child(3) {
   flex-basis: 15%;
 }
+
+.flogo {
+  width: 80px;
+  margin-bottom: 30px;
+}
 /* End of the Footer Css */
 
