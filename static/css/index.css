@@ -181,5 +181,14 @@ dl, ol, ul {
   font-size: 13px;
   line-height: 20px;
 }
+
+.frow {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
 /* End of the Footer Css */
 
