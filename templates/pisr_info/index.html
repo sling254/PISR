@@ -2,13 +2,14 @@
 
 {% load static %}
 
-{% block contetnt %}
+{% block content %}
 <div class="home">
     <video src="{% static 'videos/forest_view.mp4' %}" muted loop autoplay></video>
     <div class="cover"></div>
     <div class="cover-text">
         <h2>Profesional Institute <br>of<br> Scientific Research</h2>
         <h4>welcome to PISR: The <span>Environment</span> Experts</h4>
+        <a href="{% url 'home' %}">explore</a>
     </div>
 </div>
 {% endblock %}
