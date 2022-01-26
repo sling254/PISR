@@ -196,5 +196,8 @@ dl, ol, ul {
   padding: 10px;
 }
 
+.fcol:nth-child(2), .fcol:nth-child(3) {
+  flex-basis: 15%;
+}
 /* End of the Footer Css */
 
