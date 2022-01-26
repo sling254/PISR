@@ -204,5 +204,11 @@ dl, ol, ul {
   width: 80px;
   margin-bottom: 30px;
 }
+
+.fcol h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
 /* End of the Footer Css */
 
