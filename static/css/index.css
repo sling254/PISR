@@ -90,6 +90,15 @@ dl, ol, ul {
 }
 
 
+.logo {
+  position: absolute;
+  left: 2rem;
+  z-index: 300;
+  top: 2.1rem;
+  color: whitesmoke;
+}
+
+
 .section {
   height: 100vh;
 }
@@ -141,15 +150,26 @@ dl, ol, ul {
   }
 
   .mobile-nav-toggle {
-      position: fixed;
-      width: 1;
+      position: absolute;
+      border: 0;
+      width: 2rem;
       aspect-ratio: 1;
       top: 2rem;
       right: 2rem;
       z-index: 999;
       display: block;
-
+      background-image: url('https://res.cloudinary.com/dblrvhi8r/image/upload/v1643220090/hamburger-menu_y7knvt.svg');
+      background-repeat: no-repeat;
+      background-color: whitesmoke;
+      background-position: center;
+      background-size: cover;
+      
   }    
+
+
+  .mobile-nav-toggle[aria-expanded='true'] {
+    background-image: url(https://res.cloudinary.com/dblrvhi8r/image/upload/v1643220091/close_ablnmd.svg);
+  }
 }
 
 
