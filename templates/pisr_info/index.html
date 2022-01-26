@@ -1,1 +1,21 @@
-{%extends "base.html"%}
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block contetnt %}
+<div class="home">
+    <video src="{% static 'videos/forest_view.mp4' %}" muted loop autoplay></video>
+    <div class="cover"></div>
+    <div class="cover-text">
+        <h2>Profesional Institute <br>of<br> Scientific Research</h2>
+        <h4>welcome to PISR: The <span>Environment</span> Experts</h4>
+        <button class="btn btn-success">Get Started</button>
+    </div>
+</div>
+
+<div class="section one">
+
+</div>
+{% endblock %}
+
+
