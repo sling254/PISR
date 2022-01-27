@@ -1,6 +1,3 @@
-console.log('Hello World');
-
-
 // landing page js
 const primaryNav = document.querySelector('#primary-navigation');
 const navToggle = document.querySelector('.mobile-nav-toggle');
