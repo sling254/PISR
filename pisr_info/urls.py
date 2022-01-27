@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import IndexView
+from .views import IndexView, LandingPageView
 from .import views
 
 urlpatterns = [
-    path('', IndexView, name='index'),
-    path('home/', views.home, name='home' )
+    path('', LandingPageView, name='landingpage'),
+    path('home/', IndexView, name='home'),
 ]
