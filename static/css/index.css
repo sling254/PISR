@@ -275,6 +275,15 @@ dl, ol, ul {
       text-decoration: none;
   }
 }
+/* Style objective one */
+.obj-1 .achivement{
+  background: linear-gradient(to right, #08203e, #557c93);
+  /* background-color: var(--french-blue); */
+  height: auto;
+
+}
+
+/* End of objective one style */
 
 /* Start of the Footer Css */
 .footer footer {
