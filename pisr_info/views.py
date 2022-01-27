@@ -6,5 +6,5 @@ from django.shortcuts import render
 def IndexView(request):
     return render(request, 'pisr_info/index.html')
 
-def CommunicateView(request):
-    return render(request, 'pisr_info/communicate.html')
+def EngagementView(request):
+    return render(request, 'pisr_info/engagement.html')
