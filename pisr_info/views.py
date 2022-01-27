@@ -8,3 +8,7 @@ def IndexView(request):
 
 def EngagementView(request):
     return render(request, 'pisr_info/engagement.html')
+
+def LandingPageView(request):
+    return render(request, 'pisr_info/landingpage.html')
+
