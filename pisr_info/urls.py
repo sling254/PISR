@@ -1,9 +1,9 @@
 from django.urls import path
-from .views import IndexView, LandingPageView,EngagementView
+from .views import IndexView, LandingPageView,ObjectiveView
 from .import views
 
 urlpatterns = [
     path('', LandingPageView, name='landingpage'),
     path('home/', IndexView, name='home'),
-    path('engagement', EngagementView, name='engagement')
+    path('objective1/', ObjectiveView, name='objective1'),
 ]

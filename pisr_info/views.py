@@ -10,7 +10,5 @@ def IndexView(request):
 def LandingPageView(request):
     return render(request, 'pisr_info/landingpage.html')
 
-
-def EngagementView(request):
-    return render(request, 'pisr_info/engagement.html')
-
+def ObjectiveView(request):
+    return render(request, 'pisr_info/obj1.html')
