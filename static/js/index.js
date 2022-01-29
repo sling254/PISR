@@ -15,3 +15,9 @@ navToggle.addEventListener('click', ()=> {
 
     }
 })
+
+
+// landingpage animations
+let tl = gsap.timeline({Defaults: {Easing: Expo.EaseIn}});
+
+tl.to('.reveal', { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y:0, stagger: .3, duration: 1})
