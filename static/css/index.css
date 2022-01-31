@@ -48,36 +48,38 @@
 }
 
 
-dl, ol, ul {
+.home dl, ol, ul {
   margin-bottom: 0;
 }
 
 
-.cover-text {
+.home .cover-text {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 12;
+  z-index: 3000;
   flex-direction: column;
 }
 
 
-.cover-text h2 {
+.home .cover-text h2 {
   font-size: 3em;
   font-weight: 400;
   line-height: 1em;
+  z-index: 3000;
+
   /* text-transform: uppercase; */
 }
 
 
-.cover-text h4 {
+.home .cover-text h4 {
   letter-spacing: 4px;
   font-weight: 200;
 }
 
 
-.cover {
+.home .cover {
   position: absolute;
   top: 0;
   left: 0;
@@ -316,7 +318,7 @@ body > div > div.cover-text > a:hover {
 
 
 /*landingpage animations */
-.reveal {
+.home .reveal {
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0) ;
   transition: all 1.5s;
   transform: translateY(-2em);
