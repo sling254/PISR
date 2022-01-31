@@ -289,6 +289,12 @@ background-image: url("https://images.unsplash.com/photo-1542601906990-b4d3fb778
   }
 }
 /* Style objective one */
+.obj-1 .hero{
+  background: linear-gradient(rgb(0, 110, 255),rgb(0, 195, 255)), url("https://images.unsplash.com/photo-1639821685087-74250b876743?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80") no-repeat center / cover;
+  height: 60vh;
+  color: white;
+  margin-bottom: 2rem;
+}
 .obj-1 .achivement{
   background-image: url("https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1013&q=80");
 
