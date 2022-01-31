@@ -9,3 +9,7 @@ def IndexView(request):
 
 def LandingPageView(request):
     return render(request, 'pisr_info/landingpage.html')
+
+
+def ObjectiveView(request):
+    return render(request, 'pisr_info/obj1.html')
