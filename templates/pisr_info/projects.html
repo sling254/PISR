@@ -2,56 +2,49 @@
 {% load static %}
 
 {% block content %}
-
-<br><br>
-<div id="carouselExampleCaptions" class="carousel slide center w-70" data-bs-ride="carousel" >
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner" style="justify-content: center;">
-      <div class="carousel-item active">
-        <img src="/static/img/projects/bird.jpg" class="d-block " alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="/static/img/projects/ocean.jpg" class="d-block" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="/static/img/projects/lake.jpg" class="d-block " alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <br>
-
-<section class="pwp-projects">
-    <!-- after slideshow -->
-    <main>
-        
-        <!-- courasel ends -->
-        <h2 style="text-align: center;">PROJECTS PAGE</h2>
-        <div>
+<br>
+<div class="photoGallery">
+    <div class="container">      
+        <div class="gallery-columns">
             <div class="row">
+                <div class="col-6 col-sm-4 mb-4">
+                    <a href="https://images.pexels.com/photos/2765872/pexels-photo-2765872.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="thumbnail">
+                        <img src="https://images.pexels.com/photos/2765872/pexels-photo-2765872.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="img-fluid" alt="Gallery Image">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 mb-4">
+                    <a href="https://images.pexels.com/photos/109391/pexels-photo-109391.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="thumbnail">
+                        <img src="https://images.pexels.com/photos/109391/pexels-photo-109391.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="img-fluid" alt="Gallery Image">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 mb-4">
+                    <a href="https://images.pexels.com/photos/2382894/pexels-photo-2382894.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="thumbnail">
+                        <img src="https://images.pexels.com/photos/2382894/pexels-photo-2382894.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="img-fluid" class="img-fluid" alt="Gallery Image">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 mb-4">
+                    <a href="https://images.pexels.com/photos/2480797/pexels-photo-2480797.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="thumbnail">
+                        <img src="https://images.pexels.com/photos/2480797/pexels-photo-2480797.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="img-fluid" alt="Gallery Image">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 mb-4">
+                    <a href="https://images.pexels.com/photos/1123771/pexels-photo-1123771.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="thumbnail">
+                        <img src="https://images.pexels.com/photos/1123771/pexels-photo-1123771.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="img-fluid" alt="Gallery Image">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 mb-4">
+                    <a href="https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="thumbnail">
+                        <img src="https://images.pexels.com/photos/325807/pexels-photo-325807.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="img-fluid" alt="Gallery Image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h2 style="text-align: center;">PROJECTS</h2>
+<section class="pwp-projects">
+        <div>
+            <div class="row" id="row">
                 <div class="col-md-3">
                     <div class="card  text-center" id="card1">
                         <br>
@@ -120,27 +113,25 @@
         <style>
             .outer-div {
                 display: flex;
+                justify-content: center;
+                background-color: #e1f5fe;
             }
 
             .inner-div {
-                background-color: #e1f5fe;
-                margin: 0px 20px;
-                padding: 20px;
-                border: 1px solid #81d4fa;
+                margin: 0px 10px;
+                padding: 70px;
+                justify-content: center;
             }
         </style>
 
         </head>
 
         <body>
-
-            <!-- Outer Div (That may be your row) -->
             <div class="outer-div">
-
-                <!-- Inner Div (That may be your Columns) -->
                 <div class="inner-div">
                     <h3 style="text-align: center;">PISR rolling work programme up to 2030</h3>
-                    <p>The rolling work programme up to 2030 of PISR aims to advance the achievement of the overall
+                    <br>
+                    <p class=" " style="max-width: 1500px;">The rolling work programme up to 2030 of PISR aims to advance the achievement of the overall
                         objective of PISR, which is to strengthen the science-policy interface for biodiversity and
                         ecosystem services for the conservation and sustainable use of biodiversity, long-term human
                         well-being and sustainable development.
@@ -302,6 +293,308 @@
                     </div>
                 </div>
             </div><br>
+            <section id="team" class="pb-5">
+                <div class="container">
+                    <h5 class="section-title h1"></h5>
+                    <div class="row">
+                        <!-- Team member -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                <div class="mainflip">
+                                    <div class="frontside">
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <p><img class=" img-fluid" src="/static/img/projects/pexels-artem-beliaikin-2447036.jpg" alt="card image"></p>
+                                                <h4 class="card-title">Sunlimetech</h4>
+                                                <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="backside">
+                                        <div class="card">
+                                            <div class="card-body text-center mt-4">
+                                                <h4 class="card-title">Sunlimetech</h4>
+                                                <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-skype"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-google"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="readmoree text-center">Read More »</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./Team member -->
+                        <!-- Team member -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                <div class="mainflip">
+                                    <div class="frontside">
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <p><img class=" img-fluid" src="/static/img/projects/ocean.jpg" alt="card image"></p>
+                                                <h4 class="card-title">Sunlimetech</h4>
+                                                <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="backside">
+                                        <div class="card">
+                                            <div class="card-body text-center mt-4">
+                                                <h4 class="card-title">Sunlimetech</h4>
+                                                <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-skype"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-google"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="readmoree text-center">Read More »</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./Team member -->
+                        <!-- Team member -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                <div class="mainflip">
+                                    <div class="frontside">
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <p><img class=" img-fluid" src="/static/img/projects/cheetar.jpg" alt="card image"></p>
+                                                <h4 class="card-title">Sunlimetech</h4>
+                                                <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="backside">
+                                        <div class="card">
+                                            <div class="card-body text-center mt-4">
+                                                <h4 class="card-title">Sunlimetech</h4>
+                                                <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-skype"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-google"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="readmoree text-center">Read More »</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./Team member -->
+                        <!-- Team member -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                <div class="mainflip">
+                                    <div class="frontside">
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <p><img class=" img-fluid" src="/static/img/projects/elephant.jpg" alt="card image"></p>
+                                                <h4 class="card-title">Sunlimetech</h4>
+                                                <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="backside">
+                                        <div class="card">
+                                            <div class="card-body text-center mt-4">
+                                                <h4 class="card-title">Sunlimetech</h4>
+                                                <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-skype"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-google"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="readmoree text-center">Read More »</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./Team member -->
+                        <!-- Team member -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                <div class="mainflip">
+                                    <div class="frontside">
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <p><img class=" img-fluid" src="/static/img/projects/seedling.jpg" alt="card image"></p>
+                                                <h4 class="card-title">Sunlimetech</h4>
+                                                <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="backside">
+                                        <div class="card">
+                                            <div class="card-body text-center mt-4">
+                                                <h4 class="card-title">Sunlimetech</h4>
+                                                <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-skype"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-google"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="readmoree text-center">Read More »</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./Team member -->
+                        <!-- Team member -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                <div class="mainflip">
+                                    <div class="frontside">
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <p><img class=" img-fluid" src="/static/img/projects/pollution.jpg" alt="card image"></p>
+                                                <h4 class="card-title">Sunlimetech</h4>
+                                                <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="backside">
+                                        <div class="card">
+                                            <div class="card-body text-center mt-4">
+                                                <h4 class="card-title">Sunlimetech</h4>
+                                                <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-skype"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-google"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="readmoree text-center">Read More »</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./Team member -->
+            
+                    </div>
+                </div>
+            </section>
             <section class="testimonial-slider bg-light">
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -346,6 +639,5 @@
                     </div>
                 </div>
             </section>
-    </main>
 </section>
 {% endblock %}
