@@ -97,14 +97,27 @@ dl, ol, ul {
   background: hsl(0 0% 100% / .2);
   backdrop-filter: blur(1rem); */
 }
+.img-fluid1{
+  height: 50%;
+}
+.achivement{
+background-image: url("https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1013&q=80");
+}
 
+#card11{
+  opacity: 0.62;
+  height: auto;
+  
+}
 
 #primary-navigation li a {
   text-decoration: none;
   font-weight: 400;
   font-size: 1.2rem;
 }
-
+.back{
+  padding: 1rem 1rem;
+}
 
 #primary-navigation li {
   list-style: none;
@@ -310,8 +323,8 @@ body > div > div.cover-text > a:hover {
 }
 /* Style objective one */
 .obj-1 .achivement{
-  background: linear-gradient(to right, #08203e, #557c93);
-  /* background-color: var(--french-blue); */
+  background-image: url("https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1013&q=80");
+
   height: auto;
 
 }
