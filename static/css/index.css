@@ -246,7 +246,11 @@ body > div > div.cover-text > a:hover {
       background-repeat: no-repeat;
       background-color: whitesmoke;
       background-position: center;
-      background-size: cover;      
+      background-size: cover;     
+       
+      box-shadow: -6px 7px 24px -7px rgba(0,0,0,0.63);
+-webkit-box-shadow: -6px 7px 24px -7px rgba(0,0,0,0.63);
+-moz-box-shadow: -6px 7px 24px -7px rgba(0,0,0,0.63);
   }    
 
 
