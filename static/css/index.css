@@ -282,9 +282,10 @@ body > div > div.cover-text > a:hover {
 }
 
 
-@media (min-width: 560px){
+@media (max-width: 560px){
   .logo h2 {
     margin-top: 1rem;
+    display: none;
   }
 }
 
