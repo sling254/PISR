@@ -90,6 +90,20 @@
 }
 
 
+nav {
+  height: auto;
+  box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+}
+
+
+.nav-container {
+  box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+}
+
 #primary-navigation {
   display: flex;
   align-items: center;
@@ -150,7 +164,7 @@ body > div > div.cover-text > a:hover {
 .logo {
   position: absolute;
   left: 2rem;
-  z-index: 300;
+  z-index: 1300;
   top: 1rem;
   color: whitesmoke;
   cursor: pointer;
@@ -159,7 +173,11 @@ body > div > div.cover-text > a:hover {
 
 
 .logo h2 {
-  color: var(--color-primary);
+  color: whitesmoke;
+  margin-top: 0;
+  z-index: 1300;
+  font-weight: bolder;
+
 }
 
 .cover-text {
@@ -169,6 +187,11 @@ body > div > div.cover-text > a:hover {
 
 .cover-text h4 {
   font-weight: 200;
+}
+
+
+.push-down {
+  margin-top: 5rem;
 }
 
 
@@ -292,13 +315,15 @@ body > div > div.cover-text > a:hover {
 
 @media (min-width: 35em){
   #primary-navigation {
-      padding: 1rem;
+      padding: 1.2rem 1rem;
       position: absolute;
+      margin-bottom: 4.5rem;
       top: 0;
       left: 0;
       z-index: 1100;
       width: 100%;     
-      background-color: transparent;   
+      background: linear-gradient(to right, #08203e, #557c93);
+ 
   }
 
 
