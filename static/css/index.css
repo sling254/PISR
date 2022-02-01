@@ -32,7 +32,6 @@
   color: whitesmoke;
   z-index: 10;
   font-family: 'Montserrat', sans-serif;
-  margin-top: -1.5rem;
   z-index: 2000;
 }
 
@@ -48,36 +47,38 @@
 }
 
 
-dl, ol, ul {
+.home dl, ol, ul {
   margin-bottom: 0;
 }
 
 
-.cover-text {
+.home .cover-text {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 12;
+  z-index: 3000;
   flex-direction: column;
 }
 
 
-.cover-text h2 {
+.home .cover-text h2 {
   font-size: 3em;
   font-weight: 400;
   line-height: 1em;
+  z-index: 3000;
+
   /* text-transform: uppercase; */
 }
 
 
-.cover-text h4 {
+.home .cover-text h4 {
   letter-spacing: 4px;
   font-weight: 200;
 }
 
 
-.cover {
+.home .cover {
   position: absolute;
   top: 0;
   left: 0;
@@ -87,6 +88,20 @@ dl, ol, ul {
   mix-blend-mode: overlay;
 }
 
+
+nav {
+  height: auto;
+  box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+}
+
+
+.nav-container {
+  box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 2px 11px 0px rgba(0,0,0,0.75);
+}
 
 #primary-navigation {
   display: flex;
@@ -148,7 +163,7 @@ body > div > div.cover-text > a:hover {
 .logo {
   position: absolute;
   left: 2rem;
-  z-index: 300;
+  z-index: 1300;
   top: 1rem;
   color: whitesmoke;
   cursor: pointer;
@@ -157,7 +172,11 @@ body > div > div.cover-text > a:hover {
 
 
 .logo h2 {
-  color: var(--color-primary);
+  color: whitesmoke;
+  margin-top: 0;
+  z-index: 1300;
+  font-weight: bolder;
+
 }
 
 .cover-text {
@@ -167,6 +186,11 @@ body > div > div.cover-text > a:hover {
 
 .cover-text h4 {
   font-weight: 200;
+}
+
+
+.push-down {
+  margin-top: 5rem;
 }
 
 
@@ -280,22 +304,25 @@ body > div > div.cover-text > a:hover {
 }
 
 
-@media (min-width: 560px){
+@media (max-width: 560px){
   .logo h2 {
     margin-top: 1rem;
+    display: none;
   }
 }
 
 
 @media (min-width: 35em){
   #primary-navigation {
-      padding: 1rem;
+      padding: 1.2rem 1rem;
       position: absolute;
+      margin-bottom: 4.5rem;
       top: 0;
       left: 0;
       z-index: 1100;
-      width: 100%;     
-      background-color: transparent;   
+      width: 100%; 
+      background: linear-gradient(to right, #08203e, #557c93);
+ 
   }
 
 
@@ -316,7 +343,7 @@ body > div > div.cover-text > a:hover {
 
 
 /*landingpage animations */
-.reveal {
+.home .reveal {
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0) ;
   transition: all 1.5s;
   transform: translateY(-2em);

@@ -38,6 +38,8 @@
   </head>
   <body>
 
+    {% include 'navbar.html' %}
+
     {% block content %} {% endblock %}
 
     <!-- Start of the Footer -->
@@ -109,6 +111,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="{% static 'js/index.js'%}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
   </body>
 </html>
