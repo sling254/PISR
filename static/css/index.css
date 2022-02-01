@@ -32,7 +32,6 @@
   color: whitesmoke;
   z-index: 10;
   font-family: 'Montserrat', sans-serif;
-  margin-top: -1.5rem;
   z-index: 2000;
 }
 
@@ -321,7 +320,7 @@ body > div > div.cover-text > a:hover {
       top: 0;
       left: 0;
       z-index: 1100;
-      width: 100%;     
+      width: 100%; 
       background: linear-gradient(to right, #08203e, #557c93);
  
   }
