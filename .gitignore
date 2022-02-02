@@ -110,7 +110,7 @@ ENV/
 env.bak/
 venv.bak/
 virtual/
-envpist/
+envpis/
 
 # Spyder project settings
 .spyderproject
