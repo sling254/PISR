@@ -285,7 +285,6 @@ explain {
     border-color: #007b5e;
 }
 
-
 section .section-title {
     text-align: center;
     color: #007b5e;
@@ -390,9 +389,8 @@ section .section-title {
 
 .photoGallery {
   padding: 30px 0px;
-  background-color: #00ff0079;
-  border-radius: 50px 0px 50px 0px;
-  
+  background-color: #81a9ff79;
+  border-radius: 0px 0px 50px 0px;  
 }
 .photoGallery h2 {
   font-size: 40px;

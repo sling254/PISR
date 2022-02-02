@@ -2,8 +2,22 @@
 {% load static %}
 
 {% block content %}
-<br>
-<div class="photoGallery">
+<div>
+    <div class="hero bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 back">
+                    <h1 class="lead">Assessing knowledge</h1>
+                    <h2>To assess the state of knowledge on biodiversity 
+                        and nature’s contributions to people in support of sustainable development.</h2>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="photoGallery push-down mt-0">
     <div class="container">      
         <div class="gallery-columns">
             <div class="row">
@@ -72,9 +86,7 @@
                             <div class="card-title">ENVIRONMENTAL REPORT</div>
                             <p class="card-text">As the UN Secretary-General has said, we are currently grappling with
                                 the worst global crisis since World War II. As leaders respond to these unprecedented
-                                challenges and take the decisions that will shape societies for decades to come, it is
-                                of paramount importance that science and evidence should guide our actions, helping us
-                                to build back better, by mending our increasingly frayed relationship with nature.</p>
+                                challenges and take the decisions that will shape societies.</p>
                         </div>
                         <div class="card-footer">
                             <a href="#" class="btn btn-outline-success btn-icon-right">
@@ -165,10 +177,9 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="count-card">
                                 <i class="far fa-smile"></i>
-                                <span data-toggle="counter-up">331+</span>
-                                <h3>Happy Clients</h3>
-                                <p>The objective of this guideline is to provide best practice guidance to improve the
-                                    ability</p>
+                                <span data-toggle="counter-up">75%</span>
+                                <h3>Enviromental Pollution</h3>
+                                <p>75 percent indicated last year that nature has been damaged seriously.</p>
                                 <a href="#">Read More »</a>
                             </div>
                         </div>
@@ -176,10 +187,9 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="count-card">
                                 <i class="fas fa-project-diagram"></i>
-                                <span data-toggle="counter-up">722+</span>
-                                <h3>Scope</h3>
-                                <p>The objective of this guideline is to provide best practice guidance to improve the
-                                    ability</p>
+                                <span data-toggle="counter-up">99%</span>
+                                <h3>Worlds Affected Population</h3>
+                                <p>99% of the world's population live in places where air quality levels exceed normal limits</p>
                                 <a href="#">Read More »</a>
                             </div>
                         </div>
@@ -187,10 +197,9 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="count-card">
                                 <i class="far fa-question-circle"></i>
-                                <span data-toggle="counter-up">526+</span>
-                                <h3>Support</h3>
-                                <p>The objective of this guideline is to provide best practice guidance to improve the
-                                    ability</p>
+                                <span data-toggle="counter-up">300 m</span>
+                                <h3>Plastic Pollution</h3>
+                                <p> Global plastic production now averages more than 300 million metric tons per year.</p>
                                 <a href="#">Read More »</a>
                             </div>
                         </div>
@@ -198,10 +207,9 @@
                         <div class="col-lg-3 col-md-6">
                             <div class="count-card">
                                 <i class="fas fa-users"></i>
-                                <span data-toggle="counter-up">100+</span>
-                                <h3>Our Team</h3>
-                                <p>The objective of this guideline is to provide best practice guidance to improve the
-                                    ability</p>
+                                <span data-toggle="counter-up">7.3 m</span>
+                                <h3>Tree Cover</h3>
+                                <p>As of 2020, global annual tree cover loss was the highest due to forestry activities</p>
                                 <a href="#">Read More »</a>
                             </div>
                         </div>
@@ -304,18 +312,21 @@
                                     <div class="frontside">
                                         <div class="card">
                                             <div class="card-body text-center">
-                                                <p><img class=" img-fluid" src="/static/img/projects/pexels-artem-beliaikin-2447036.jpg" alt="card image"></p>
-                                                <h4 class="card-title">Sunlimetech</h4>
-                                                <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                                <p><img class=" img-fluid" src="/static/img/projects/pexels-artem-beliaikin-2447036.jpg" alt="card image"></p>                                                                                               
+                                                <h4 class="card-title">Assessing knowledge</h4>
+                                                <p class="card-text">To assess the state of knowledge on biodiversity and nature’s contributions to people in support of sustainable development.
+                                                    <br> <br>
+
+                                                </p>
+                                                <a href="{% url 'objective1' %}" class="btn btn-outline-success btn-sm"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="backside">
                                         <div class="card">
                                             <div class="card-body text-center mt-4">
-                                                <h4 class="card-title">Sunlimetech</h4>
-                                                <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                <h4 class="card-title">Assessing knowledge</h4>
+                                                <p class="card-text">This objective will be achieved through the following initial deliverables, corresponding to the three priority topics:</p>
                                                 <ul class="list-inline">
                                                     <li class="list-inline-item">
                                                         <a class="social-icon text-xs-center" target="_blank" href="#">
@@ -340,7 +351,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a href="#" class="readmoree text-center">Read More »</a>
+                                        <a href="{% url 'objective1' %}" class="readmoree text-center">Read More »</a>
                                     </div>
                                 </div>
                             </div>
@@ -353,18 +364,19 @@
                                     <div class="frontside">
                                         <div class="card">
                                             <div class="card-body text-center">
-                                                <p><img class=" img-fluid" src="/static/img/projects/ocean.jpg" alt="card image"></p>
-                                                <h4 class="card-title">Sunlimetech</h4>
-                                                <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                                <p><img class=" img-fluid" src="/static/img/projects/ocean.jpg" alt="card image"></p>                                                
+                                               
+                                                <h4 class="card-title">Building Capacity</h4>
+                                                <p class="card-text">To build capacities of individuals and institutions for a strengthened science-policy interface for biodiversity and ecosystem services.</p>
+                                                <a href="{% url 'objective2' %}" class="btn btn-outline-success btn-sm"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="backside">
                                         <div class="card">
                                             <div class="card-body text-center mt-4">
-                                                <h4 class="card-title">Sunlimetech</h4>
-                                                <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                <h4 class="card-title">Building Capacity</h4>
+                                                <p class="card-text">The achievement of this objective is supported by the three components of the capacity-building rolling plan, which applies to ongoing and future activities of the work programme:</p>
                                                 <ul class="list-inline">
                                                     <li class="list-inline-item">
                                                         <a class="social-icon text-xs-center" target="_blank" href="#">
@@ -389,7 +401,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a href="#" class="readmoree text-center">Read More »</a>
+                                        <a href="{% url 'objective2' %}" class="readmoree text-center">Read More »</a>
                                     </div>
                                 </div>
                             </div>
@@ -403,17 +415,18 @@
                                         <div class="card">
                                             <div class="card-body text-center">
                                                 <p><img class=" img-fluid" src="/static/img/projects/cheetar.jpg" alt="card image"></p>
-                                                <h4 class="card-title">Sunlimetech</h4>
-                                                <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                                
+                                                <h4 class="card-title">Strengthening the knowledge foundations</h4>
+                                                <p class="card-text">To promote the generation of knowledge and management of data on biodiversity and ecosystem services. </p>
+                                                <a href="{% url 'objective3' %}" class="btn btn-outline-success btn-sm"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="backside">
                                         <div class="card">
                                             <div class="card-body text-center mt-4">
-                                                <h4 class="card-title">Sunlimetech</h4>
-                                                <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                <h4 class="card-title">Strengthening the knowledge foundations</h4>
+                                                <p class="card-text">This objective will be achieved through ongoing and future activities across the work programme, as follows:</p>
                                                 <ul class="list-inline">
                                                     <li class="list-inline-item">
                                                         <a class="social-icon text-xs-center" target="_blank" href="#">
@@ -438,7 +451,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a href="#" class="readmoree text-center">Read More »</a>
+                                        <a href="{% url 'objective3' %}" class="readmoree text-center">Read More »</a>
                                     </div>
                                 </div>
                             </div>
@@ -452,17 +465,18 @@
                                         <div class="card">
                                             <div class="card-body text-center">
                                                 <p><img class=" img-fluid" src="/static/img/projects/elephant.jpg" alt="card image"></p>
-                                                <h4 class="card-title">Sunlimetech</h4>
-                                                <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                               
+                                                <h4 class="card-title">Supporting policy</h4>
+                                                <p class="card-text">To identify and promote the development and use of policy instruments, policy support tools and methodologies in the field of biodiversity.</p>
+                                                <a href="{% url 'objective4' %}" class="btn btn-outline-success btn-sm"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="backside">
                                         <div class="card">
                                             <div class="card-body text-center mt-4">
-                                                <h4 class="card-title">Sunlimetech</h4>
-                                                <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                <h4 class="card-title">Supporting policy</h4>
+                                                <p class="card-text">This objective will be achieved through ongoing and future activities across the work programme, as follows:</p>
                                                 <ul class="list-inline">
                                                     <li class="list-inline-item">
                                                         <a class="social-icon text-xs-center" target="_blank" href="#">
@@ -487,7 +501,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a href="#" class="readmoree text-center">Read More »</a>
+                                        <a href="{% url 'objective4' %}"  class="readmoree text-center">Read More »</a>
                                     </div>
                                 </div>
                             </div>
@@ -501,17 +515,18 @@
                                         <div class="card">
                                             <div class="card-body text-center">
                                                 <p><img class=" img-fluid" src="/static/img/projects/seedling.jpg" alt="card image"></p>
-                                                <h4 class="card-title">Sunlimetech</h4>
-                                                <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                                
+                                                <h4 class="card-title">Communicating and engaging</h4>
+                                                <p class="card-text">To strengthen the involvement of the members and stakeholders and to increase the visibility of PISR and the use of PISR products.</p>
+                                                <a href="{% url 'objective5' %}"   class="btn btn-outline-success btn-sm"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="backside">
                                         <div class="card">
                                             <div class="card-body text-center mt-4">
-                                                <h4 class="card-title">Sunlimetech</h4>
-                                                <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                <h4 class="card-title">Communicating and engaging</h4>
+                                                <p class="card-text">This objective will be achieved through the following:</p>
                                                 <ul class="list-inline">
                                                     <li class="list-inline-item">
                                                         <a class="social-icon text-xs-center" target="_blank" href="#">
@@ -536,7 +551,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a href="#" class="readmoree text-center">Read More »</a>
+                                        <a href="{% url 'objective5' %}"   class="readmoree text-center">Read More »</a>
                                     </div>
                                 </div>
                             </div>
@@ -549,18 +564,18 @@
                                     <div class="frontside">
                                         <div class="card">
                                             <div class="card-body text-center">
-                                                <p><img class=" img-fluid" src="/static/img/projects/pollution.jpg" alt="card image"></p>
-                                                <h4 class="card-title">Sunlimetech</h4>
-                                                <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                                <p><img class=" img-fluid" src="/static/img/projects/pollution.jpg" alt="card image"></p>                                               
+                                                <h4 class="card-title">Improving the effectiveness of the Platform</h4>
+                                                <p class="card-text">To ensure the regular internal and external review of the effectiveness of PISR.</p>
+                                                <a href="{% url 'objective6' %}" class="btn btn-outline-success btn-sm"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="backside">
                                         <div class="card">
                                             <div class="card-body text-center mt-4">
-                                                <h4 class="card-title">Sunlimetech</h4>
-                                                <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                                <h4 class="card-title">Improving the effectiveness of the Platform</h4>
+                                                <p class="card-text">This objective is aimed at ensuring that the outcome of the review of the first work programme informs the implementation of the rolling work programme up to 2030.</p>
                                                 <ul class="list-inline">
                                                     <li class="list-inline-item">
                                                         <a class="social-icon text-xs-center" target="_blank" href="#">
@@ -585,7 +600,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a href="#" class="readmoree text-center">Read More »</a>
+                                        <a href="{% url 'objective6' %}" class="readmoree text-center">Read More »</a>
                                     </div>
                                 </div>
                             </div>

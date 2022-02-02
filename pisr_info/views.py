@@ -17,5 +17,15 @@ def projects(request):
 def LandingPageView(request):
     return render(request, 'pisr_info/landingpage.html')
 
-def ObjectiveView(request):
+def Objective1View(request):
     return render(request, 'pisr_info/obj1.html')
+def Objective2View(request):
+    return render(request, 'pisr_info/obj2.html')
+def Objective3View(request):
+    return render(request, 'pisr_info/obj3.html')
+def Objective4View(request):
+    return render(request, 'pisr_info/obj4.html')
+def Objective5View(request):
+    return render(request, 'pisr_info/obj5.html')
+def Objective6View(request):
+    return render(request, 'pisr_info/obj6.html')
