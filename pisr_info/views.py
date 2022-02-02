@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Blog, BlogCategory
 
 # Create your views here.
 
@@ -7,8 +8,13 @@ def IndexView(request):
     return render(request, 'pisr_info/index.html')
 
 
-def home(request):
-    return render(request, 'pisr_info/home.html')
+def Blogview(request):
+    return render (request, 'pisr_info/blog.html')
+    
+def Blogdetailsview(request,**kwargs):
+    slug = kwargs.get('slug')
+    context = {'object':Blog.objects.get(slug=slug)}
+    return render (request, 'pisr_info/blog_details.html', context)
 
 def projects(request):
     """View functionality for displaying projects template"""
