@@ -7,26 +7,28 @@
   </div>
   <div class="container">
     <div class="row gy-3">
-      <div class="col-md-4">
-        <div class="card" >
-          <img class="rounded" src="https://random.imagecdn.app/500/500" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div>
-              <ul>
-                <li class="l1">
-                  <a href=""><i class="fa fa-user-alt"> &nbsp; Author</i></a>
-                </li>
-                <li class="l1">
-                  <a href=""><i class="fas fa-calendar-week">&nbsp; 20 jan 2022</i></a>
-                </li>
-              </ul>
-            </div>          
-            <h5 class="card-title">5 Technology Considerations Ultimate Design</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="" style="text-decoration: none;">Read More</a>
+      {% for blog in blogs%}
+        <div class="col-md-4">
+          <div class="card" >
+            <img class="rounded img-fluid" src="{{blog.image.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div>
+                <ul>
+                  <li class="l1">
+                    <a href=""><i class="fa fa-user-alt"> &nbsp; {{blog.author}}</i></a>
+                  </li>
+                  <li class="l1">
+                    <a href=""><i class="fas fa-calendar-week">&nbsp; {{blog.updated_at}}</i></a>
+                  </li>
+                </ul>
+              </div>          
+              <h5 class="card-title">{{blog.title}}</h5>
+              <p class="card-text">{{blog.shot_description}}</p>
+              <a href="#" class="" style="text-decoration: none;">Read More</a>
+            </div>
           </div>
         </div>
-      </div>
+      {% endfor %}
   
   
       <div class="col-md-4">
@@ -140,21 +142,28 @@
   <div class="row mt-2">
     <div class="col-md-3 ms-md-auto">
       <!-- Start of the Pagination -->
+      hello
+     
       <nav aria-label="Page navigation example">
         <ul class="pagination">
+          {% if blogs.has_previous %}
           <li class="page-item">
             <a class="page-link" href="#" aria-label="Previous">
               <span aria-hidden="true">&laquo;</span>
             </a>
           </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          {% endif %}
+          {% for page in blogs.paginator.pages %}
+          <li class="page-item"><a class="page-link" href="#">{{page}}</a></li>
+          {% endfor %}
+          {% if page.has_next %}
           <li class="page-item">
             <a class="page-link" href="#" aria-label="Next">
               <span aria-hidden="true">&raquo;</span>
             </a>
           </li>
+          {% endif %}
+          
         </ul>
       </nav>
       <!-- End of Pagination -->

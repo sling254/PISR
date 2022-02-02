@@ -1,18 +1,23 @@
 from django.shortcuts import render
 from .models import Blog, BlogCategory
-
+#import pagination stuff
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 # Create your views here.
 
 
-def IndexView(request):
-    return render(request, 'pisr_info/index.html')
-
-
 def Blogview(request):
-    return render (request, 'pisr_info/blog.html')
+    #Set up Pagination
+    p = Paginator(Blog.objects.all(), 1)
+    page = request.GET.get('page')
+    blogs = p.get_page(page)
+    context = {
+        'blogs':blogs
+        }
+    return render (request, 'pisr_info/blog.html', context)
     
 def Blogdetailsview(request,**kwargs):
     slug = kwargs.get('slug')
+
     context = {'object':Blog.objects.get(slug=slug)}
     return render (request, 'pisr_info/blog_details.html', context)
 

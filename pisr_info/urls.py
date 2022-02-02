@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import IndexView,Blogview,Blogdetailsview,LandingPageView,Objective1View,Objective2View,Objective3View,Objective4View,Objective5View,Objective6View
+from .views import Blogview,Blogdetailsview,LandingPageView,Objective1View,Objective2View,Objective3View,Objective4View,Objective5View,Objective6View
 from .import views
 
 urlpatterns = [
