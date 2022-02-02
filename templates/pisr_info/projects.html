@@ -2,8 +2,22 @@
 {% load static %}
 
 {% block content %}
-<!-- <br> -->
-<div class="photoGallery push-down">
+<div>
+    <div class="hero bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 back">
+                    <h1 class="lead">Assessing knowledge</h1>
+                    <h2>To assess the state of knowledge on biodiversity 
+                        and nature’s contributions to people in support of sustainable development.</h2>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="photoGallery push-down mt-0">
     <div class="container">      
         <div class="gallery-columns">
             <div class="row">
@@ -72,9 +86,7 @@
                             <div class="card-title">ENVIRONMENTAL REPORT</div>
                             <p class="card-text">As the UN Secretary-General has said, we are currently grappling with
                                 the worst global crisis since World War II. As leaders respond to these unprecedented
-                                challenges and take the decisions that will shape societies for decades to come, it is
-                                of paramount importance that science and evidence should guide our actions, helping us
-                                to build back better, by mending our increasingly frayed relationship with nature.</p>
+                                challenges and take the decisions that will shape societies.</p>
                         </div>
                         <div class="card-footer">
                             <a href="#" class="btn btn-outline-success btn-icon-right">
@@ -305,9 +317,9 @@
                                         <div class="card">
                                             <div class="card-body text-center">
                                                 <p><img class=" img-fluid" src="/static/img/projects/pexels-artem-beliaikin-2447036.jpg" alt="card image"></p>
-                                                <h4 class="card-title">Sunlimetech</h4>
+                                                <h4 class="card-title">Sunlimetech 1</h4>
                                                 <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                                <a href="{% url 'objective1' %}" class="btn btn-outline-success btn-sm"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -340,7 +352,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a href="#" class="readmoree text-center">Read More »</a>
+                                        <a href="{% url 'objective1' %}" class="readmoree text-center">Read More »</a>
                                     </div>
                                 </div>
                             </div>
@@ -354,9 +366,9 @@
                                         <div class="card">
                                             <div class="card-body text-center">
                                                 <p><img class=" img-fluid" src="/static/img/projects/ocean.jpg" alt="card image"></p>
-                                                <h4 class="card-title">Sunlimetech</h4>
+                                                <h4 class="card-title">Sunlimetech2</h4>
                                                 <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                                <a href="{% url 'objective2' %}" class="btn btn-outline-success btn-sm"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -389,7 +401,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a href="#" class="readmoree text-center">Read More »</a>
+                                        <a href="{% url 'objective2' %}" class="readmoree text-center">Read More »</a>
                                     </div>
                                 </div>
                             </div>
@@ -405,7 +417,7 @@
                                                 <p><img class=" img-fluid" src="/static/img/projects/cheetar.jpg" alt="card image"></p>
                                                 <h4 class="card-title">Sunlimetech</h4>
                                                 <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                                <a href="{% url 'objective3' %}" class="btn btn-outline-success btn-sm"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -438,7 +450,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a href="#" class="readmoree text-center">Read More »</a>
+                                        <a href="{% url 'objective3' %}" class="readmoree text-center">Read More »</a>
                                     </div>
                                 </div>
                             </div>
@@ -452,9 +464,9 @@
                                         <div class="card">
                                             <div class="card-body text-center">
                                                 <p><img class=" img-fluid" src="/static/img/projects/elephant.jpg" alt="card image"></p>
-                                                <h4 class="card-title">Sunlimetech</h4>
+                                                <h4 class="card-title">Sunlimetech4</h4>
                                                 <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                                <a href="{% url 'objective4' %}" class="btn btn-outline-success btn-sm"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -487,7 +499,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a href="#" class="readmoree text-center">Read More »</a>
+                                        <a href="{% url 'objective4' %}"  class="readmoree text-center">Read More »</a>
                                     </div>
                                 </div>
                             </div>
@@ -503,7 +515,7 @@
                                                 <p><img class=" img-fluid" src="/static/img/projects/seedling.jpg" alt="card image"></p>
                                                 <h4 class="card-title">Sunlimetech</h4>
                                                 <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                                <a href="{% url 'objective5' %}"   class="btn btn-outline-success btn-sm"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -536,7 +548,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a href="#" class="readmoree text-center">Read More »</a>
+                                        <a href="{% url 'objective5' %}"   class="readmoree text-center">Read More »</a>
                                     </div>
                                 </div>
                             </div>
@@ -550,9 +562,9 @@
                                         <div class="card">
                                             <div class="card-body text-center">
                                                 <p><img class=" img-fluid" src="/static/img/projects/pollution.jpg" alt="card image"></p>
-                                                <h4 class="card-title">Sunlimetech</h4>
+                                                <h4 class="card-title">Sunlimetech6</h4>
                                                 <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                                <a href="{% url 'objective6' %}" class="btn btn-outline-success btn-sm"><i class="fa fa-plus"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -585,7 +597,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <a href="#" class="readmoree text-center">Read More »</a>
+                                        <a href="{% url 'objective6' %}" class="readmoree text-center">Read More »</a>
                                     </div>
                                 </div>
                             </div>

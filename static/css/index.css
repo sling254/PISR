@@ -482,6 +482,9 @@ footer form button .fas {
 .copyright {
   text-align: center;
 }
+span{
+  text-align: center !important;
+}
 
 footer .underline {
   width: 100%;
