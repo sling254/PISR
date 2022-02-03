@@ -7,7 +7,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 def Blogview(request):
     #Set up Pagination
-    p = Paginator(Blog.objects.all(), 2)
+    p = Paginator(Blog.objects.all(), 6)
     page = request.GET.get('page')
     blogs = p.get_page(page)
     context = {
