@@ -1,7 +1,8 @@
-{% extends 'base.html' %}
+{% include 'base.html' %}
 {% block content %}
 <section class="blog  blog-banner ">
-  <div id="blog-banner">
+  <br> <br> <br> 
+  <div id="blog-banner  mt-4">
     <h5 class="text-center">Blog & Articles</h5>
     <h1 class="text-center">RECENT BLOG</h1>
   </div>
@@ -10,137 +11,27 @@
       {% for blog in blogs%}
         <div class="col-md-4">
           <div class="card" >
-            <img class="rounded img-fluid" src="{{blog.image.url}}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div>
-                <ul>
-                  <li class="l1">
-                    <a href=""><i class="fa fa-user-alt"> &nbsp; {{blog.author}}</i></a>
-                  </li>
-                  <li class="l1">
-                    <a href=""><i class="fas fa-calendar-week">&nbsp; {{blog.updated_at}}</i></a>
-                  </li>
-                </ul>
-              </div>          
+            <img class="rounded img-fluid card-img-top"  src="{{blog.image.url}}" alt="...">
+            <div class="card-body">          
               <h5 class="card-title">{{blog.title}}</h5>
               <p class="card-text">{{blog.shot_description}}</p>
-              <a href="#" class="" style="text-decoration: none;">Read More</a>
+              <div class="card-footer bg-transparent ">
+                <a href="{% url 'blog-detail' blog.slug %}" class="" style="text-decoration: none;">Read More >></a>
+                <br>
+                <small><i class="fa fa-user-alt"> &nbsp; {{blog.author}}</i></small>
+                <small><i class="fas fa-calendar-week">&nbsp; {{blog.updated_at}}</i></small>
+              </div>
+              
             </div>
           </div>
         </div>
-      {% endfor %}
-  
-  
-      <div class="col-md-4">
-        <div class="card" >
-          <img class="rounded" src="https://random.imagecdn.app/500/500" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div>
-              <ul>
-                <li class="l1">
-                  <a href=""><i class="fa fa-user-alt"> &nbsp; Author</i></a>
-                </li>
-                <li class="l1">
-                  <a href=""><i class="fas fa-calendar-week">&nbsp; 20 jan 2022</i></a>
-                </li>
-              </ul>
-            </div>          
-            <h5 class="card-title">5 Technology Considerations Ultimate Design</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="" style="text-decoration: none;">Read More</a>
-          </div>
-        </div>
-      </div>
-  
-  
-      <div class="col-md-4">
-        <div class="card" >
-          <img class="rounded" src="https://random.imagecdn.app/500/500" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div>
-              <ul>
-                <li class="l1">
-                  <a href=""><i class="fa fa-user-alt"> &nbsp; Author</i></a>
-                </li>
-                <li class="l1">
-                  <a href=""><i class="fas fa-calendar-week">&nbsp; 20 jan 2022</i></a>
-                </li>
-              </ul>
-            </div>          
-            <h5 class="card-title">5 Technology Considerations Ultimate Design</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="" style="text-decoration: none;">Read More</a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-md-4">
-        <div class="card" >
-          <img class="rounded" src="https://random.imagecdn.app/500/500" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div>
-              <ul>
-                <li class="l1">
-                  <a href=""><i class="fa fa-user-alt"> &nbsp; Author</i></a>
-                </li>
-                <li class="l1">
-                  <a href=""><i class="fas fa-calendar-week">&nbsp; 20 jan 2022</i></a>
-                </li>
-              </ul>
-            </div>          
-            <h5 class="card-title">5 Technology Considerations Ultimate Design</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="" style="text-decoration: none;">Read More</a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-md-4">
-        <div class="card" >
-          <img class="rounded" src="https://random.imagecdn.app/500/500" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div>
-              <ul>
-                <li class="l1">
-                  <a href=""><i class="fa fa-user-alt"> &nbsp; Author</i></a>
-                </li>
-                <li class="l1">
-                  <a href=""><i class="fas fa-calendar-week">&nbsp; 20 jan 2022</i></a>
-                </li>
-              </ul>
-            </div>          
-            <h5 class="card-title">5 Technology Considerations Ultimate Design</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="" style="text-decoration: none;">Read More</a>
-          </div>
-        </div>
-      </div>
-  
-  
-      <div class="col-md-4">
-        <div class="card" >
-          <img class="rounded" src="https://random.imagecdn.app/500/500" class="card-img-top" alt="...">
-          <div class="card-body">
-            <div>
-              <ul>
-                <li class="l1">
-                  <a href=""><i class="fa fa-user-alt"> &nbsp; Author</i></a>
-                </li>
-                <li class="l1">
-                  <a href=""><i class="fas fa-calendar-week">&nbsp; 20 jan 2022</i></a>
-                </li>
-              </ul>
-            </div>          
-            <h5 class="card-title">5 Technology Considerations Ultimate Design</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="" style="text-decoration: none;">Read More</a>
-          </div>
-        </div>
-      </div>
+
+      {% endfor %}      
     </div>
-  </section>
+</section>
     <!-- Start of the Pagination -->
     <br>
+
     <nav aria-label="Page navigation example">
       <ul class="pagination justify-content-center">
           {% if blogs.has_previous %}
@@ -166,45 +57,8 @@
       </ul>
     </nav>
     <!-- End of Pagination -->
-  
-      
-    
-  {% endblock %}
-  
-  
-  <!-- second Card -->
-  <div class="card" style="width: 18rem;">
-    <img src="https://random.imagecdn.app/500/500" class="card-img-top" alt="...">
-    <div class="card-body">
-    <div class="">
-      <ul class="blog-list">  
-        <li class="l1"><a href="">
-         <i class="fa fa-user-alt">
-            Author
-         </i>
-        
-        </a>
-     </li>
-     <li class="l1">
-         <a href="#">
-             <i class="fas fa-calendar-week">
-                 20 jan 2022
-             </i>
-         </a>
-     </li>
-    </ul>
-  </div>
-    <h5 class="card-title">Card title</h5>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt</p>
-      <a href="#" class="btn btn">Read More</a>
-    </div>
-  </div>
-  
-  
-  <!-- third Card -->
-
-  </div>
-</section>
+{% include 'footer.html' %}
+{% endblock %}
 
   
   
